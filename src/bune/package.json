@@ -1,6 +1,7 @@
 {
   "name": "bune",
   "module": "index.ts",
+  "description": "Execute local or remote scripts",
   "type": "module",
   "devDependencies": {
     "@types/bun": "latest"

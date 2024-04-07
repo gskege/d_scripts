@@ -1,4 +1,5 @@
 # bune
+> Execute local or remote scripts
 
 To install dependencies:
 
@@ -11,5 +12,8 @@ To run:
 ```bash
 bun run index.ts
 ```
+usage
 
-This project was created using `bun init` in bun v1.1.0. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+```bash
+    bun run index.ts test_sh.sh
+```
