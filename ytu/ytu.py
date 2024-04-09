@@ -1,9 +1,12 @@
 import pyperclip
 import os
+import sys
 double_slash = "\\"
 def get_path(input):
     if double_slash in input:
-        return "yarn test " + input.split(double_slash)[-1] + " -u"
+        if len(sys.argv) > 1:
+            return f"yarn test {input.split(double_slash)[-1]} {sys.argv[1]}"
+        return f"yarn test {input.split(double_slash)[-1]}"
     return ''
 
 def main():
